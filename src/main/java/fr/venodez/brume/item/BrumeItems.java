@@ -17,7 +17,7 @@ public class BrumeItems {
 
     public static final RegistryObject<Item> PURIFIED_WATER_BUCKET = ITEMS.register("purified_water_bucket",
             () -> new BucketItem(() -> BrumeFluids.PURIFIED_WATER_FLUID.get(),
-                    new Item.Properties().maxStackSize(16).group(BrumeItemGroup.BRUME_GROUP)));
+                    new Item.Properties().maxStackSize(1).group(BrumeItemGroup.BRUME_GROUP)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
