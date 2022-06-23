@@ -16,6 +16,8 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.awt.*;
+
 public class BrumeFluids {
 
     public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");
@@ -29,8 +31,8 @@ public class BrumeFluids {
 
     public static final ForgeFlowingFluid.Properties PURIFIED_WATER_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> PURIFIED_WATER_FLUID.get(), () -> PURIFIED_WATER_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
-            .density(15).luminosity(2).viscosity(100).sound(SoundEvents.ITEM_BUCKET_FILL).overlay(WATER_OVERLAY_RL)
-            .color(0x4bdae9ff)).slopeFindDistance(4).levelDecreasePerBlock(2)
+            .density(15).luminosity(2).viscosity(100).sound(SoundEvents.ITEM_BUCKET_FILL).overlay(WATER_OVERLAY_RL).color(Color.CYAN.getRGB()))
+            .slopeFindDistance(4).levelDecreasePerBlock(2)
             .block(() -> BrumeFluids.PURIFIED_WATER_BLOCK.get())
             .bucket(() -> BrumeItems.PURIFIED_WATER_BUCKET.get());
 
