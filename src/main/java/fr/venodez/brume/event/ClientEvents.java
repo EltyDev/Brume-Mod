@@ -4,7 +4,6 @@ import fr.venodez.brume.block.PurifiedWaterBlock;
 import fr.venodez.brume.item.BrumeItems;
 import fr.venodez.brume.tag.BrumeTags;
 import fr.venodez.brume.utils.MathUtils;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
@@ -55,6 +54,7 @@ public class ClientEvents {
                {
                   if(!player.isCreative())
                   {
+                      player.world.playSound(player, player.getPosX(), player.getPosY(), player.getPosZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
                       player.addStat(Stats.ITEM_USED.get(item));
 
                       player.setHeldItem(Hand.MAIN_HAND, TANItems.PURIFIED_WATER_CANTEEN.getDefaultInstance());
@@ -93,6 +93,7 @@ public class ClientEvents {
                 event.setCancellationResult(ActionResultType.FAIL);
             }
             else {
+                player.world.playSound(player, player.getPosX(), player.getPosY(), player.getPosZ(), SoundEvents.ITEM_BUCKET_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
                 if(itemStack.getCount() > 1)
                 {
                     player.inventory.addItemStackToInventory(BrumeItems.PURIFIED_WATER_BUCKET.get().getDefaultInstance());
