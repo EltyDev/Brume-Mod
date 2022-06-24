@@ -15,7 +15,7 @@ public class PurifiedWaterBlock extends FlowingFluidBlock {
     public PurifiedWaterBlock() {
         super(() -> BrumeFluids.PURIFIED_WATER_FLUID.get(), AbstractBlock.Properties.create(Material.WATER)
                 .doesNotBlockMovement().hardnessAndResistance(100f).noDrops());
-        this.setDefaultState(this.getStateContainer().getBaseState().with(QUANTITY, 3));
+        this.setDefaultState(this.getStateContainer().getBaseState().with(QUANTITY, 4));
     }
 
     @Override

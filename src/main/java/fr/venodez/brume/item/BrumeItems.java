@@ -31,7 +31,4 @@ public class BrumeItems {
         ITEMS.register(eventBus);
     }
 
-//TODO Extend la bottle de purified water et ajouter un nbt_tag avec "public void AddInformation"
-
-
 }

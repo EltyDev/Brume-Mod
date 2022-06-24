@@ -137,7 +137,6 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.35'
     implementation fg.deobf("curse.maven:tough-as-nails-246391:3430873")
     implementation fg.deobf("teamtwilight:twilightforest:4.0.870:universal")
-    implementation fg.deobf("curse.maven:botania-225643:3608755")
     implementation fg.deobf("curse.maven:patchouli-306770:3459118")
     implementation fg.deobf("curse.maven:curios-309927:3725386")
     implementation fg.deobf("curse.maven:thermal-expansion-69163:3788892")
