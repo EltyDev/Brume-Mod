@@ -66,5 +66,5 @@ Brume Modpack's utils
     modId="toughasnails"
     mandatory=true
     versionRange="[1.16.5-4.0.1.8,1.16.5-4.1.0.9)"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"

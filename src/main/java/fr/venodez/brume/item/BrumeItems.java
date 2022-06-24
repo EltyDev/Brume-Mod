@@ -4,7 +4,6 @@ import fr.venodez.brume.Brume;
 import fr.venodez.brume.fluid.BrumeFluids;
 import fr.venodez.brume.itemgroup.BrumeItemGroup;
 import net.minecraft.item.BucketItem;
-import net.minecraft.item.GlassBottleItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -22,8 +21,5 @@ public class BrumeItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
-
-//TODO Extend la bottle de purified water et ajouter un nbt_tag avec "public void AddInformation"
-
 
 }

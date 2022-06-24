@@ -41,6 +41,7 @@ public class Brume {
         BrumeTileEntities.register(eventBus);
         forgeBus.addListener(ClientEvents::onBottleUsed);
         forgeBus.addListener(ClientEvents::onBucketUsed);
+        forgeBus.addListener(ClientEvents::onCanteenUsed);
         eventBus.addListener(this::setup);
         eventBus.addListener(this::enqueueIMC);
         eventBus.addListener(this::processIMC);
