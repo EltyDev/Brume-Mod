@@ -1,5 +1,8 @@
 {
   "itemGroup.brume": "Brume",
   "item.brume.purified_water_bucket": "Purified Water Bucket",
-  "fluid.brume.purified_water_fluid": "Purified Water"
+  "fluid.brume.purified_water_fluid": "Purified Water",
+
+  "item.brume.naga_helmet": "Naga scale helmet",
+  "item.brume.naga_boots": "Naga scale boots"
 }
